@@ -1,0 +1,54 @@
+<div class="page" data-name="add-device">
+  <div class="navbar">
+    <div class="navbar-inner">
+		<div class="left">
+			<a class="link back">
+				<i class="icon icon-back"></i>
+				<span class="if-not-md">Back</span>
+			</a>
+		</div>
+      <div class="title" >Добавить</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="block-title"></div>
+    <div class="list no-hairlines-md">
+		<ul>
+			<li class="item-content item-input">
+				<div class="item-inner">
+					<div class="item-title item-label">IP адрес</div>
+					<div class="item-input-wrap">
+						<input type="text" placeholder="xxx.xxx.xxx.xxx" id="device_ip" minlength="7" maxlength="15"
+							required validate pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$"
+							data-error-message="Неправильный формат IP">
+						<span class="input-clear-button"></span>
+					</div>
+				</div>
+			</li>
+			<li class="item-content item-input">
+				<div class="item-inner">
+					<div class="item-title item-label">Название</div>
+					<div class="item-input-wrap">
+						<input type="text" placeholder="имя" id="device_name" maxlength="32" 
+						required validate pattern="^.{1,32}$" data-error-message="Не более 32 знаков">
+						<span class="input-clear-button"></span>
+					</div>
+				</div>
+			</li>
+			<li class="item-content item-input">
+				<div class="item-inner">
+					<div class="item-title item-label">Пароль</div>
+					<div class="item-input-wrap">
+						<input type="text" placeholder="пароль" id="device_pass" 
+							required validate pattern="^\d{1,8}" data-error-message="Только цифры! Не более 8 знаков">
+						<span class="input-clear-button"></span>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="block">
+			<a href="#" class="button button-big button-fill button-large button-res active centered" id="save_device">Записать</a>
+		</div>
+	</div>
+  </div>
+</div>

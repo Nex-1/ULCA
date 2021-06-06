@@ -1,0 +1,99 @@
+﻿<!--страница настройки отображения зон-->
+<div class="page" data-name="view-zone">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a class="link back">
+					<i class="icon icon-back"></i>
+					<span class="if-not-md">Back</span>
+				</a>
+			</div>
+		  <div class="title">Отображение зон</div>
+		  <div class="right">
+				<a class="link menu-view-zone">
+					<i class="icon material-icons">menu</i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="page-content">
+		<div class="list simple-list">
+		<div class="block-title">&nbsp</div>
+			<ul id="list-zone">
+				<!-- список зон -->
+			</ul>
+		</div>
+	</div>
+
+	<!-- форма установки диапазона -->
+	<div class="popup set-range">
+		<div class="page">
+			<div class="block-title">Установка диапазона</div>
+			<div class="list fill-height">
+				<ul class="fill-height">
+					<li class="item-content item-input" style="height: 80px">
+						<div class="item-inner">
+							<div class="item-title item-label">Зоны</div>
+							<div class="item-input-wrap">
+								<input type="text" placeholder="1-3, 4, 5" id="set_range_zone" maxlength="32" 
+								required validate pattern="(\d|(\d-\d)|,|(,\s)){0,32}$" data-error-message="Неправильный формат">
+								<span class="input-clear-button"></span>
+							</div>
+						</div>
+					</li>
+					<li class="item-content item-input item-input-outline">
+						<div class="item-inner">
+							<div class="item-label">Кол-во сцен</div>
+							<div class="item-input-wrap input-dropdown-wrap" style="margin-top: 5px;">
+								<select id="scene-range">
+									<option value="1">Off</option>
+									<option value="2">Off + Sc1</option>
+									<option value="3">Off + Sc1-Sc2</option>
+									<option value="4">Off + Sc1-Sc3</option>
+									<option value="5">Off + Sc1-Sc4</option>
+									<option value="6">Off + Sc1-Sc5</option>
+									<option value="7" selected>Off + Sc1-Sc6</option>
+									<option value="8">Off + Sc1-Sc7</option>
+								</select>
+							</div>
+						</div>
+					</li>
+					<div class="block" style="width: 100%">
+						<div class="row" style="margin-top: 100px;">
+							<a href="#" class="col button button-large button-fill popup-close">Отмена</a>
+							<a href="#" class="col button button-large button-fill set-range-zone">Принять</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+		<!-- форма сброса диапазона -->
+	<div class="popup reset-range">
+		<div class="page">
+			<div class="block-title">Сброс диапазона</div>
+			<div class="list fill-height">
+				<ul class="fill-height">
+					<li class="item-content item-input" style="height: 80px">
+						<div class="item-inner">
+							<div class="item-title item-label">Зоны</div>
+							<div class="item-input-wrap">
+								<input type="text" placeholder="1-3, 4, 5" id="reset_range_zone" maxlength="32" 
+								required validate pattern="(\d|(\d-\d)|,|(,\s)){0,32}$" data-error-message="Неправильный формат">
+								<span class="input-clear-button"></span>
+							</div>
+						</div>
+					</li>
+					<div class="block" style="width: 100%">
+						<div class="row" style="margin-top: 170px;">
+							<a href="#" class="col button button-large button-fill popup-close">Отмена</a>
+							<a href="#" class="col button button-large button-fill reset-range-zone">Принять</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>

@@ -1,0 +1,140 @@
+﻿<!--страница привязки каналов sequence-->
+<div class="page" data-name="scene">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a class="link back">
+					<i class="icon icon-back"></i>
+					<span class="if-not-md">Back</span>
+				</a>
+			</div>
+		  <div class="title">Настройка сценариев</div>
+		  <div class="right">
+				<a class="link menu-scene">
+					<i class="icon material-icons">menu</i>
+				</a>
+			</div>
+			<div class="subnavbar" style="height: 60px;">
+				<div class="subnavbar-inner">
+					<div class="row max-width">
+						<div class="col-65">
+							<div class="item-input item-input-outline max-width">
+								<div class="label-select">Зона</div>
+								<div class="item-input-wrap input-dropdown-wrap">
+									<select id="zone-list" class="max-width" style="height: 30px;"  name="zone">
+
+									</select>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-35">
+							<div class="item-input item-input-outline max-width">
+								<div class="label-select">Сцена</div>
+								<div class="item-input-wrap input-dropdown-wrap">
+									<select id="scene-list" class="max-width" style="height: 30px;" name="scene">
+
+									</select>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</div>
+	</div>
+	<div class="page-content hide-navbar-on-scroll">
+		<div class="list">
+			<div class="row label-select">
+				<div class="col fade-label">Fade: 0</div>
+				<div class="col mode-label">Mode SW</div>
+			</div>
+			<ul id="channel_list">
+
+			</ul>
+		</div>
+	</div>
+
+	<!-- форма сохранения сцены -->
+	<div class="popup save-scene">
+		<div class="page">
+			<div class="block-title">Сохранение сцены</div>
+			<div class="list fill-height">
+				<ul class="fill-height">
+					<li class="item-content item-input item-input-outline">
+						<div class="item-inner">
+							<div class="item-label">Сцена</div>
+							<div class="item-input-wrap input-dropdown-wrap" style="margin-top: 5px;">
+								<select id="sc-save"></select>
+							</div>
+						</div>
+					</li>
+					<li class="item-content item-input item-input-outline">
+						<div class="item-inner">
+							<div class="item-label">Fade</div>
+							<div class="item-input-wrap input-dropdown-wrap" style="margin-top: 5px;">
+								<select id="sc-fade"></select>
+							</div>
+						</div>
+					</li>
+					<li class="item-content item-input item-input-outline">
+						<div class="item-inner">
+							<div class="item-label">Режим</div>
+							<div class="item-input-wrap input-dropdown-wrap" style="margin-top: 5px;">
+								<select id="sc-mode">
+									<option value="0">Mode SC</option>
+									<option value="0">Mode SW</option>
+								</select>
+							</div>
+						</div>
+					</li>
+					<div class="block" style="width: 100%">
+						<div class="row" style="margin-top: 35px;">
+							<a href="#" class="col button button-large button-fill popup-close">Отмена</a>
+							<a href="#" class="col button button-large button-fill save-sc">Записать</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- форма установки диапазона -->
+	<div class="popup range-scene">
+		<div class="page">
+			<div class="block-title">Установка диапазона</div>
+			<div class="list fill-height">
+				<ul class="fill-height">
+					<li class="item-content item-input" style="height: 80px">
+						<div class="item-inner">
+							<div class="item-title item-label">Каналы</div>
+							<div class="item-input-wrap">
+								<input type="text" placeholder="1-3, 4, 5" id="range-ch" maxlength="32" 
+								required validate pattern="(\d|(\d-\d)|,|(,\s)){0,32}$" data-error-message="Неправильный формат">
+								<span class="input-clear-button"></span>
+							</div>
+						</div>
+					</li>
+					<li class="item-content item-input" style="height: 80px">
+						<div class="item-inner">
+							<div class="item-title item-label">Уровень</div>
+							<div class="item-input-wrap">
+								<input type="text" placeholder="от 0 до 100 или NC" id="level-ch" maxlength="32" 
+								required validate pattern="^((100)|(0*\d{1,2}))|((n|N)(c|C))$" data-error-message="Неправильный формат">
+								<span class="input-clear-button"></span>
+							</div>
+						</div>
+					</li>
+					<div class="block" style="width: 100%">
+						<div class="row" style="margin-top: 100px;">
+							<a href="#" class="col button button-large button-fill popup-close">Отмена</a>
+							<a href="#" class="col button button-large button-fill set-value-ch">Принять</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>

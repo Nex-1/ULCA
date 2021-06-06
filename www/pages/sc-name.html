@@ -1,0 +1,99 @@
+﻿<!--cтраница настройки имён сцен-->
+    <div class="page" data-name="sc-name">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left ">
+                    <a href="#" class="link back load_page_login_content">
+                        <i class="icon icon-back"></i>
+                        <span>Back</span>
+                    </a>
+                </div>
+                <div class="title ">Названия сцен</div>
+                <div class="right">
+                    <a href="#" id="menu-scene-name" class="link">
+                        <i class="icon material-icons ">menu</i>
+                    </a>
+                </div>
+				<div class="subnavbar">
+					<div class="subnavbar-inner">
+						<div class="item-input item-input-outline max-width">
+							<div class="label-select">Зоны</div>
+								<div class="item-input-wrap input-dropdown-wrap">
+									<select id="sс-select" class="max-width" style="height: 30px;" name="sc-name-panel">
+									</select>
+								</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+
+        <div class="page-content hide-navbar-on-scroll">
+			<div>&nbsp</div>
+            <div class="list">
+                <ul id="sc-list">
+                 </ul>
+            </div>
+        </div>
+		
+        <!-- форма установки диапазона -->
+        <div class="popup" id="rename-sc">
+            <div class="page">
+                <div class="block-title">Запись имён сцен</div>
+                <div class="list fill-height">
+                    <ul class="fill-height">
+                        <li class="item-content item-input" style="height: 80px">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Сцена</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" placeholder="Сцена..." id="change-sc-name" maxlength="16"
+                                           required validate data-error-message="Неправильный формат">
+
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="block" style="width: 100%">
+                            <div class="row" style="margin-top: 170px;">
+                                <a href="#" class="col button button-large button-fill popup-close">Отмена</a>
+                                <a href="#" class="col button button-large button-fill" id="ok-sc-name">Принять</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="recording-sc">
+            <div class="page">
+                <div class="block-title">Запись имён сцен</div>
+                <div class="list fill-height">
+                    <ul class="fill-height">
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-label">Сцена</div>
+                                <div class="item-input-wrap input-dropdown-wrap" style="margin-top: 5px;">
+                                    <select id="save-select">
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="block" style="width: 100%">
+                            <div class="row" style="margin-top: 175px;">
+                                <a href="#" class="col button button-large button-fill popup-close">Отмена</a>
+                                <a href="#" class="col button button-large button-fill" id="save-sc-name">Сохранить</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+

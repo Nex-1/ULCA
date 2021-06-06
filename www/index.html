@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>LCA admin</title>
+  <link rel="stylesheet" href="core/framework7.bundle.min.css">
+  <!-- <link rel="stylesheet" href="css/framework7-icons.css"> -->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="icon" href="img/icon.png">
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+  <!-- App root element -->
+    <div id="app">
+		<!-- Statusbar overlay -->
+		<div class="statusbar"></div>
+		<div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+			<!-- Initial Page, "data-name" contains page name -->
+			<div class="page" data-name="device">
+
+				<!-- Чердак -->
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="title">NEX admin</div>
+					</div>
+				</div>
+
+				<!-- Подвал -->
+				<div class="toolbar tabbar toolbar-bottom tabbar-labels">
+					<div class="toolbar-inner">
+						<a href="#" class="tab-link tab-link-active" id="but_new_device">
+							<i class="icon icon-fill material-icons">add_circle</i>
+							<span class="tabbar-label">Новое устройство</span>
+						</a>
+						<a href="#" class="tab-link tab-link-active" id="change-theme">
+							<i class="icon material-icons">color_lens</i>
+							<span class="tabbar-label open-theme">Тема</span>
+						</a>
+					</div>
+				</div>
+
+
+
+				<!-- Scrollable page content -->
+				<div class="page-content">
+					<div class="block-title">Список устройств</div>
+					<div class="list">
+						<ul id="device_list">
+							<!-- <li class="swipeout">
+								<div class="swipeout-content">
+									<a href="#" class="item-link item-content">
+										<div class="item-inner">
+											<div class="item-title">Дом</div>
+											<div class="item-after">192.168.1.234</div>
+										</div>
+									</a>
+								 </div>
+								 <div class="swipeout-actions-right">
+									<a href="#" class="open-more-actions color-theme-blue-shade">More</a>
+									<a href="#" class="swipeout-delete">Delete</a>
+								</div>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+  <script src="core/framework7.bundle.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
